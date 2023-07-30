@@ -1,0 +1,99 @@
+
+@font-face {
+    font-family: "Iran";
+    src: url(../font/IRANYekanXFaNum-Bold.ttf);
+    src: url(../font/IRANYekanXFaNum-Regular.ttf);
+}
+:root{
+    --digi-color: #EF4056;
+    --blue-color: #73CBF8;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Iran;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    direction: rtl;
+    margin-top: 15%;
+}
+main form{
+    width: 300px;
+    border-radius: 5px;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+main form h2{
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+main form p span{
+    color: var(--blue-color);
+}
+#spc-text{
+    margin-top: -30px;
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+.digi-logo{
+    display: flex;
+    justify-content: center;
+}
+#spc-text{
+    color: var(--digi-color);
+    display: none;
+}
+.sign-div{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.sign-btn{
+    width: 100%;
+    height: 35px;
+    background-color: var(--digi-color);
+    border-radius: 6px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+.tx-1{
+    font-size: 9px;
+    color: rgb(27, 26, 26);
+    margin-bottom: 15px;
+}
+.digikala-input{
+    width: 100%;
+    height: 35px;
+    border: 1px solid var(--blue-color);
+    padding-right: 10px;
+    outline: none;
+    border-radius: 5px;
+    margin-bottom: 33px;
+}
+.end-tx{
+    font-size: 8px;
+    text-align: center;
+}
+.end-tx span{
+    padding: 3px;
+}
+
+
+@media (min-width: 0px) and (max-width: 768px) {
+    form{
+        border: none !important;
+        width: 100% !important;
+    }
+    .end-tx{
+        text-align: right;
+    }
+    main{
+        margin-top: 25% !important;
+    }
+}
